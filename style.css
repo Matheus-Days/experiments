@@ -1,0 +1,75 @@
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* general styling */
+:root {
+  font-size: calc(1vw + 1vh + .625vmin);
+}
+
+body {
+  display: flex; 
+  flex-direction: column;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  padding: 1rem;
+}
+
+header {
+  background-color: #001f3f;
+  color: #80bfff;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #0074d9;
+  color: #b3dbff;
+}
+
+a {
+  color: #0074d9;
+}
+
+@media only screen and (max-width: 48rem) {
+   body {
+      font-size: 1.325rem;
+   }
+}
